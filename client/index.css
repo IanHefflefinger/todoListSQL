@@ -1,0 +1,11 @@
+/* connected and working */
+
+#table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    margin: none;
+    padding: 3px;
+}

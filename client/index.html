@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>todo list</title>
+</head>
+<body>
+    <div>
+        <!-- used for adding tasks to database -->
+        <div>
+            <label>Enter task: </label>
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+
+        <!-- used for querying tasks in database -->
+        <div>
+            <label>Search: </label>
+            <input type="text" id="searchInput" placeholder="Search for task...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <!-- table will hold the information form the database (seems appropriate to represent a table in a table) -->
+        <table id="table">
+            <thead>
+                <td>id</td>
+                <td>task</td>
+                <td>date_added</td>
+                <td>delete</td>
+                <td>edit</td>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="updateRow">
+            <label>Name:</label>
+            <input type="text" id="updateTaskInput">
+            <button id="updateRowBtn">Update</button>
+        </section>
+
+    </div>
+
+
+    <!-- script - handles DOM manipulation -->
+    <script src="index.js"></script>
+</body>
+</html>
